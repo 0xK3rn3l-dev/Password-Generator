@@ -1,6 +1,7 @@
 from utils import generate_multiple_passwords
 import time
 import os
+from utils import clear_screen
 # FOR LINUX
 #from tqdm import tqdm 
 
@@ -37,9 +38,9 @@ def add_description(pwd, description):
 
 
 def CLI_mode():
-    cli_welcome =  ("\n==============================\n")
-    cli_welcome += ("    Password Generator CLI    \n")
-    cli_welcome += ("==============================\n")
+    cli_welcome =  ("\n\t\t\t\t==============================\n")
+    cli_welcome += ("\t\t\t\t    Password Generator CLI    \n")
+    cli_welcome += ("\t\t\t\t==============================\n")
     print(cli_welcome)
 
     while True:
@@ -142,9 +143,10 @@ def CLI_mode():
                 print("\nGoodbye!")
                 break
             else:
-                print("\n" + "="*50)
-                print("Generating new passwords...")
-                print("="*50 + "\n")
+                clear_screen()
+                print("\n\t\t\t\t" + "="*50)
+                print("\t\t\t\t\t    Generating new passwords...")
+                print("\t\t\t\t" + "="*50 + "\n")
                 continue
                 
 
@@ -155,6 +157,3 @@ def CLI_mode():
             break
         except Exception as e:
             print(f"[ERROR] Unexpected error: {e}\n")
-
-
-
