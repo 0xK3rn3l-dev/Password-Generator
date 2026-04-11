@@ -27,6 +27,7 @@ def get_mode_input():
     if len(sys.argv) > 1:
         mode = sys.argv[1].upper()
         if mode in ["GUI", "CLI"]:
+            clear_screen()
             return mode
         else:
             print(f"[ERROR] Invalid mode '{sys.argv[1]}' provided as argument. Please choose GUI or CLI\n")
