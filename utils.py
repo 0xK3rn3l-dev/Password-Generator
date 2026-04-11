@@ -2,7 +2,7 @@ import random
 import string
 import os
 
-def _generate_password(length=12, use_uppercase=True, use_lowercase=True, use_digits=True, use_special=True) -> str:
+def generate_password(length=12, use_uppercase=True, use_lowercase=True, use_digits=True, use_special=True) -> str:
     uppercase = string.ascii_uppercase
     lowercase = string.ascii_lowercase
     digits = string.digits
@@ -39,7 +39,7 @@ def _generate_password(length=12, use_uppercase=True, use_lowercase=True, use_di
 
 
 def generate_multiple_passwords(count=1, **kwargs):
-    return [_generate_password(**kwargs) for _ in range(count)]
+    return [generate_password(**kwargs) for _ in range(count)]
 
 
 def clear_screen():

@@ -1,0 +1,147 @@
+/* Главное окно */
+QMainWindow {
+    background-color: #0a0a0a;
+}
+
+/* Все виджеты */
+QWidget {
+    color: #00ff41;
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+/* Заголовки */
+QLabel#title {
+    color: #00ff41;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #0a0a0a;
+    border-radius: 5px;
+    border: 1px solid #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+
+/* Обычные надписи */
+QLabel {
+    color: #00ff41;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+
+/* Кнопки */
+QPushButton {
+    background-color: #0a0a0a;
+    color: #00ff41;
+    border: 2px solid #00ff41;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #00ff41;
+    color: #0a0a0a;
+}
+
+QPushButton:pressed {
+    background-color: #00cc33;
+    border-color: #00cc33;
+}
+
+
+
+/* Поля ввода */
+QLineEdit {
+    background-color: #0a0a0a;
+    color: #00ff41;
+    border: 2px solid #00ff41;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+QLineEdit:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff41;
+}
+
+
+/* Поле вывода пароля */
+QLineEdit#password_output {
+    color: #ffffff;                    
+    background-color: #0a0a0a;         
+    border: 2px solid #00ff41;         
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "Consolas", monospace;
+}
+
+/* При фокусе (когда выбрано) */
+QLineEdit#password_output:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff41;
+}
+
+/* Текст placeholder (когда поле пустое) */
+QLineEdit#password_output[placeholderText="Generated password..."] {
+    color: #666666;         
+}
+
+
+
+
+/* Чекбоксы */
+QSpinBox {
+    background-color: #0a0a0a;
+    color: #00ff41;
+    border: 2px solid #00ff41;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QSpinBox::up-button, 
+QSpinBox::down-button {
+    width: 0px;
+    border: none;
+    background: none;
+}
+
+QSpinBox::up-arrow, 
+QSpinBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+}
+
+
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #00ff41;
+    border-radius: 3px;
+    background-color: #0a0a0a;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00ff41;
+}
+
+/* Скроллбары */
+QScrollBar:vertical {
+    background-color: #0a0a0a;
+    width: 12px;
+    border: 1px solid #00ff41;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #00ff41;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
