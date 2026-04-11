@@ -43,5 +43,4 @@ def generate_multiple_passwords(count=1, **kwargs):
 
 
 def clear_screen():
-    """Очищает экран консоли"""
     os.system('cls' if os.name == 'nt' else 'clear')
