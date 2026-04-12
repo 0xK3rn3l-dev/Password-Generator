@@ -2,8 +2,10 @@ from utils import generate_multiple_passwords
 import time
 import os
 from utils import clear_screen
+
 # FOR LINUX
 #from tqdm import tqdm 
+# Also platform.system() to check
 
 from alive_progress import alive_bar
 
