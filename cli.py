@@ -6,7 +6,7 @@ from utils import clear_screen
 # FOR LINUX
 #from tqdm import tqdm 
 # Also platform.system() to check
-# also need to add mac
+# also need to add mac realisation
 
 from alive_progress import alive_bar
 
