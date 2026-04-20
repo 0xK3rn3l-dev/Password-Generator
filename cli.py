@@ -7,6 +7,8 @@ from utils import clear_screen
 #from tqdm import tqdm 
 # Also platform.system() to check
 # also need to add mac realisation
+#need to add list passwords for gui
+
 
 from alive_progress import alive_bar
 
