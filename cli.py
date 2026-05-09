@@ -8,7 +8,6 @@ from utils import clear_screen
 # Also platform.system() to check
 # also need to add mac realisation
 #need to add list passwords for gui
-# test mb unitest or pytest? sasdasdsaas
 
 from alive_progress import alive_bar
 
