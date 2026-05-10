@@ -3,10 +3,9 @@ import time
 import os
 from utils import clear_screen
 
-# FOR LINUX
+# FOR LINUX and web version (maybe)
 #from tqdm import tqdm 
 # Also platform.system() to check
-# also need to add mac realisation
 #need to add list passwords for gui
 
 from alive_progress import alive_bar
