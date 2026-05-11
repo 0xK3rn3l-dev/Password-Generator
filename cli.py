@@ -5,7 +5,7 @@ from utils import clear_screen
 
 # FOR LINUX and web version (maybe)
 #from tqdm import tqdm 
-# Also platform.system() to check
+# Also platform.system() to check and multiplatform
 #need to add list passwords for gui
 
 from alive_progress import alive_bar
